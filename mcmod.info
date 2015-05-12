@@ -1,0 +1,12 @@
+{
+  "modListVersion": 2,
+  "modList": [{
+    "modid": "mod_ExtraButtons",
+    "name": "MoreButtons",
+    "description": "A mod adding many new buttons.",
+    "version": "0.1",
+    "updateUrl": "",
+    "authorList": "ADHDPotato",
+    "credits": "Authored by ADHDPotato",
+  }]
+}
