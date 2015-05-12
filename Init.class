@@ -1,0 +1,64 @@
+package com.MinecraftPalace.Buttons;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+
+@Mod(modid="ExtraButtons", name="ExtraButtons", version="0.1")
+public class Init
+{
+  public static Block BrickButton = new BrickButton(false)
+    .func_149663_c("BrickButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  public static Block IronButton = new IronButton(false)
+    .func_149663_c("IronButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  public static Block DiamondButton = new DiamondButton(false)
+    .func_149663_c("DiamondButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  public static Block GoldButton = new GoldButton(false)
+    .func_149663_c("GoldButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  public static Block EmeraldButton = new EmeraldButton(false)
+    .func_149663_c("EmeraldButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  public static Block LapisButton = new LapisButton(false)
+    .func_149663_c("LapisButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  public static Block RedstoneButton = new RedstoneButton(false)
+    .func_149663_c("RedstoneButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  public static Block CoalButton = new CoalButtons(false)
+    .func_149663_c("CoalButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  public static Block DirtButton = new DirtButton(false)
+    .func_149663_c("DirtButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  public static Block GlassButton = new GlassButton(false)
+    .func_149663_c("GlassButton").func_149647_a(CreativeTabs.field_78028_d)
+    .func_149711_c(0.5F);
+  
+  public void PostInit(FMLPostInitializationEvent event) {}
+  
+  @Mod.EventHandler
+  public void preInit(FMLPreInitializationEvent event) {}
+  
+  @Mod.EventHandler
+  public void Init(FMLPreInitializationEvent event)
+  {
+    GameRegistry.registerBlock(BrickButton, "BrickButton");
+    GameRegistry.registerBlock(IronButton, "IronButton");
+    GameRegistry.registerBlock(DiamondButton, "DiamondButton");
+    GameRegistry.registerBlock(GoldButton, "GoldButton");
+    GameRegistry.registerBlock(EmeraldButton, "EmeraldButton");
+    GameRegistry.registerBlock(LapisButton, "LapisButton");
+    GameRegistry.registerBlock(RedstoneButton, "RedstoneButton");
+    GameRegistry.registerBlock(CoalButton, "CoalButton");
+    GameRegistry.registerBlock(DirtButton, "DirtButton");
+    GameRegistry.registerBlock(GlassButton, "GlassButton");
+  }
+}
