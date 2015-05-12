@@ -1,0 +1,23 @@
+package com.MinecraftPalace.Buttons;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockButton;
+import net.minecraft.init.Blocks;
+import net.minecraft.util.IIcon;
+
+public class BrickButton
+  extends BlockButton
+{
+  public BrickButton(boolean isSlow)
+  {
+    super(isSlow);
+  }
+  
+  @SideOnly(Side.CLIENT)
+  public IIcon func_149691_a(int p_149691_1_, int p_149691_2_)
+  {
+    return Blocks.field_150417_aV.func_149733_h(1);
+  }
+}
