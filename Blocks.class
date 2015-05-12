@@ -1,0 +1,13 @@
+package com.MinecraftPalace.Buttons;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class Blocks
+  extends Block
+{
+  protected Blocks(Material m)
+  {
+    super(m);
+  }
+}
