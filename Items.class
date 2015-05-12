@@ -1,0 +1,7 @@
+package com.MinecraftPalace.Buttons;
+
+import net.minecraft.item.Item;
+
+public class Items
+  extends Item
+{}
